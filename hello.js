@@ -1,3 +1,22 @@
+
+
+Router.configure({
+  layoutTemplate: 'main'
+});
+
+Router.route('/', {
+  name: 'hello',
+  template: 'hello'
+});
+Router.route('/login', {
+  name: 'login',
+  template: 'login'
+});
+Router.route('/register', {
+  name: 'register',
+  template: 'register'
+});
+
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
